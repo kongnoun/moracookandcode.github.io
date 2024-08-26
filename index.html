@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moracoding - Food & Eatery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Moracoding/cooking</h1>
+        </div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Delicious Food, Delivered To You</h2>
+            <p>Experience the best food from the comfort of your home.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="scroll-animation">
+        <h2>Our Menu</h2>
+        <p>Explore our wide variety of dishes.</p>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Amok Trey">
+            <h3>Amok Trey (Coconut Fish Curry)</h3>
+            <button onclick="orderItem('Amok Trey')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Bai Sach Chrouk">
+            <h3>Bai Sach Chrouk (Grilled Pork and Rice)</h3>
+            <button onclick="orderItem('Bai Sach Chrouk')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Nom Banh Chok">
+            <h3>Nom Banh Chok (Khmer Noodles)</h3>
+            <button onclick="orderItem('Nom Banh Chok')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Samlor Korko">
+            <h3>Samlor Korko (Khmer Vegetable Soup)</h3>
+            <button onclick="orderItem('Samlor Korko')">Order Now</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Lok Lak">
+            <h3>Lok Lak (Stir-Fried Beef)</h3>
+            <button onclick="orderItem('Lok Lak')">Order Now</button>
+        </div>
+    </section>
+
+    <section id="about" class="scroll-animation">
+        <h2>About Us</h2>
+        <p>Welcome to Moracoding - Food & Eatery! We are passionate about bringing the authentic flavors of Cambodia to your table. Our journey began with a love for traditional Cambodian cuisine and a desire to share it with the world. At Moracoding, we believe in using fresh, high-quality ingredients to create dishes that are not only delicious but also tell a story of our rich culinary heritage.</p>
+        <p>Our mission is to provide an exceptional dining experience that combines the warmth of Cambodian hospitality with the vibrant flavors of our cuisine. Whether you're enjoying a meal with family or friends, we strive to make every visit memorable.</p>
+    </section>
+
+    <section id="contact" class="scroll-animation" style="margin-bottom: 10em;">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for any queries or reservations.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Moracoding. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
